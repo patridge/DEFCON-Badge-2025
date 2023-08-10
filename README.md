@@ -1,2 +1,3 @@
-# DefCon-Badge-2022
-Proj Lab badge project for DefCon 2022
+# DefCon-Badge-2023
+
+Proj Lab badge project for DEF CON 31 (2023)
