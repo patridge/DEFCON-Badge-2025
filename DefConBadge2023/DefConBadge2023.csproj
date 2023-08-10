@@ -1,0 +1,52 @@
+﻿<Project Sdk="Meadow.Sdk/1.1.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputType>Library</OutputType>
+    <AssemblyName>App</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="UI\**" />
+    <EmbeddedResource Remove="UI\**" />
+    <None Remove="UI\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="defcon31-1.jpg" />
+    <None Remove="defcon31-2.jpg" />
+    <None Remove="defcon31-3.jpg" />
+    <None Remove="defcon31-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="defcon31-1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defcon31-2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defcon31-3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defcon31-4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Meadow.Contracts\Source\Meadow.Contracts\Meadow.Contracts.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation.MikroBus\Source\C16x9\Driver\C16x9.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation\Source\Meadow.Foundation.Core\Meadow.Foundation.Core.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation\Source\Meadow.Foundation.Libraries_and_Frameworks\Displays.TextDisplayMenu\Driver\Displays.TextDisplayMenu.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation\Source\Meadow.Foundation.Libraries_and_Frameworks\Graphics.MicroGraphics\Driver\Graphics.MicroGraphics.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Displays.TftSpi\Driver\Displays.TftSpi.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\ICs.IOExpanders.As1115\Driver\ICs.IOExpanders.As1115.csproj" />
+    <ProjectReference Include="..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\ICs.IOExpanders.Is31fl3731\Driver\ICs.IOExpanders.Is31fl3731.csproj" />
+    <ProjectReference Include="..\..\Meadow.ProjectLab\Source\Meadow.ProjectLab\Meadow.ProjectLab.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SimpleJpegDecoder" Version="0.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="meadow.config.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
