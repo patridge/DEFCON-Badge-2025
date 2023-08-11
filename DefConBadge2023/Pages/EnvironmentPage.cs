@@ -1,6 +1,9 @@
 ﻿using Meadow.Devices;
 using Meadow.Foundation;
 using Meadow.Foundation.Graphics;
+using Meadow.Foundation.Sensors.Accelerometers;
+using Meadow.Foundation.Sensors.Atmospheric;
+using Meadow.Foundation.Sensors.Light;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -12,6 +15,9 @@ namespace DefConBadge2023
         IProjectLabHardware config;
 
         MicroGraphics graphics;
+        Bme688 EnvironmentSensor { get; private set; }
+        Bh1750 LightSensor { get; private set; }
+        Bmi270 MotionSensor { get; private set; }
 
         public bool IsUpdating = false;
 
@@ -21,6 +27,10 @@ namespace DefConBadge2023
             this.graphics = graphics;
 
             IsUpdating = true;
+
+            EnvironmentSensor.StartUpdating();
+            LightSensor.StartUpdating();
+            MotionSensor.StartUpdating();
 
             Task.Run(() =>
             {
@@ -34,12 +44,18 @@ namespace DefConBadge2023
 
         public void StopUpdating()
         {
+            EnvironmentSensor.StartUpdating();
+            LightSensor.StartUpdating();
+            MotionSensor.StartUpdating();
+
             IsUpdating = false;
         }
 
         public void Init(IProjectLabHardware hardware)
         {
-         
+            EnvironmentSensor = hardware.EnvironmentalSensor;
+            LightSensor = hardware.LightSensor;
+            MotionSensor = hardware.MotionSensor;
         }
 
         public void Reset()
@@ -60,7 +76,6 @@ namespace DefConBadge2023
 
         public void Up()
         {
-            throw new NotImplementedException();
         }
 
         //helper method
