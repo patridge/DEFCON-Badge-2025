@@ -27,7 +27,7 @@ namespace DefConBadge2024
         {
             if(data == null || data.Length == 0)
             {
-                Init(config);
+                InitData(graphics);
             }
 
             this.config = config;
@@ -51,16 +51,18 @@ namespace DefConBadge2024
             IsUpdating = false;
         }
 
-        public void Init(IProjectLabHardware hardware)
+        void InitData(MicroGraphics graphics)
         {
-            Console.WriteLine("Init");
-
             data = new int[graphics.Width];
 
             for (int i = 0; i < graphics.Width; i++)
             {
-                data[i] = graphics.Height /2 +  (int)(graphics.Height / 3 * Math.Sin(i / (4 * Math.PI)));
+                data[i] = graphics.Height / 2 + (int)(graphics.Height / 3 * Math.Sin(i / (4 * Math.PI)));
             }
+        }
+        public void Init(IProjectLabHardware hardware)
+        {
+            Console.WriteLine("Init");
         }
 
         public void Reset()
