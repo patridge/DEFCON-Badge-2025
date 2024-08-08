@@ -1,7 +1,7 @@
 ﻿using Meadow.Devices;
 using Meadow.Foundation.Graphics;
 
-namespace DefConBadge2023
+namespace DefConBadge2024
 {
     public class WiFiTrackerPage : IBadgePage
     {

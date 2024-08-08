@@ -8,7 +8,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DefConBadge2023
+namespace DefConBadge2024
 {
     public class EnvironmentPage : IBadgePage
     {

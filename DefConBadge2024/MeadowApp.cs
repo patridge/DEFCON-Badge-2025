@@ -9,7 +9,7 @@ using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace DefConBadge2023
+namespace DefConBadge2024
 {
     // Change F7FeatherV2 to F7FeatherV1 for V1.x boards
     public class MeadowApp : App<F7CoreComputeV2>
@@ -175,7 +175,7 @@ namespace DefConBadge2023
         byte[] LoadResource(string filename)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = $"DefConBadge2023.{filename}";
+            var resourceName = $"DefConBadge2024.{filename}";
 
             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
             {
