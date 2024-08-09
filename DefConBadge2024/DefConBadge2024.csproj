@@ -4,29 +4,22 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <OutputType>Library</OutputType>
     <AssemblyName>App</AssemblyName>
+        <LangVersion>10.0</LangVersion>
+        <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="UI\**" />
-    <EmbeddedResource Remove="UI\**" />
-    <None Remove="UI\**" />
+    <None Remove="defcon32-1.jpg" />
+    <None Remove="defcon32-2.jpg" />
+    <None Remove="defcon32-3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="defcon31-1.jpg" />
-    <None Remove="defcon31-2.jpg" />
-    <None Remove="defcon31-3.jpg" />
-    <None Remove="defcon31-4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="defcon31-1.jpg">
+    <EmbeddedResource Include="defcon32-1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="defcon31-2.jpg">
+    <EmbeddedResource Include="defcon32-2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="defcon31-3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="defcon31-4.jpg">
+    <EmbeddedResource Include="defcon32-3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

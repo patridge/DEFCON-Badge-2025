@@ -26,7 +26,6 @@ namespace DefConBadge2024
         BufferRgb888 defcon1;
         BufferRgb888 defcon2;
         BufferRgb888 defcon3;
-        BufferRgb888 defcon4;
 
         //Random rand = new Random();
 
@@ -77,9 +76,6 @@ namespace DefConBadge2024
 
                 DrawSplash(defcon3);
                 await Task.Delay(3000).ConfigureAwait(false);
-
-                DrawSplash(defcon4);
-                await Task.Delay(3000).ConfigureAwait(false);
             }
         }
 
@@ -114,10 +110,9 @@ namespace DefConBadge2024
             graphics.DrawText(0, 0, "Initializing ...", Color.White);
             graphics.Show();
 
-            defcon1 = LoadImage("defcon31-1.jpg");
-            defcon2 = LoadImage("defcon31-2.jpg");
-            defcon3 = LoadImage("defcon31-3.jpg");
-            defcon4 = LoadImage("defcon31-4.jpg");
+            defcon1 = LoadImage("defcon32-1.jpg");
+            defcon2 = LoadImage("defcon32-2.jpg");
+            defcon3 = LoadImage("defcon32-3.jpg");
 
             return Task.CompletedTask;
         }
