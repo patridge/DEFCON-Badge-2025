@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="dc33-banner-fox.jpg" />
-    <None Remove="dc33-banner-person.jpg"
+    <None Remove="dc33-banner-person.jpg" />
     <None Remove="dc33-banner.jpg" />
     <None Remove="dc33-logo-dark.jpg" />
     <None Remove="dc33-logo-transparentfilled.jpg" />
