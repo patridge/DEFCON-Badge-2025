@@ -8,18 +8,26 @@
         <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="defcon32-1.jpg" />
-    <None Remove="defcon32-2.jpg" />
-    <None Remove="defcon32-3.jpg" />
+    <None Remove="dc33-banner-fox.jpg" />
+    <None Remove="dc33-banner-person.jpg"
+    <None Remove="dc33-banner.jpg" />
+    <None Remove="dc33-logo-dark.jpg" />
+    <None Remove="dc33-logo-transparentfilled.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="defcon32-1.jpg">
+    <EmbeddedResource Include="dc33-banner-fox.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="defcon32-2.jpg">
+    <EmbeddedResource Include="dc33-banner-person.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="defcon32-3.jpg">
+    <EmbeddedResource Include="dc33-banner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dc33-logo-dark.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dc33-logo-transparentfilled.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

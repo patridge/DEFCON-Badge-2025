@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using Meadow.Peripherals.Sensors;
 using Meadow.Peripherals.Sensors.Light;
 
-namespace DefConBadge2024
+namespace DefConBadge2025
 {
     public class EnvironmentPage : IBadgePage
     {

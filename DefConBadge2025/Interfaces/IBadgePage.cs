@@ -2,7 +2,7 @@
 using Meadow.Foundation.Graphics;
 using System.Threading.Tasks;
 
-namespace DefConBadge2024
+namespace DefConBadge2025
 {
     public interface IBadgePage
     {

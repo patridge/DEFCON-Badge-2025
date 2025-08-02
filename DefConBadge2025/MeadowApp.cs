@@ -10,7 +10,7 @@ using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace DefConBadge2024
+namespace DefConBadge2025
 {
     // Change F7FeatherV2 to F7FeatherV1 for V1.x boards
     public class MeadowApp : App<F7CoreComputeV2>
@@ -110,9 +110,11 @@ namespace DefConBadge2024
             graphics.DrawText(0, 0, "Initializing ...", Color.White);
             graphics.Show();
 
-            defcon1 = LoadImage("defcon32-1.jpg");
-            defcon2 = LoadImage("defcon32-2.jpg");
-            defcon3 = LoadImage("defcon32-3.jpg");
+            // defcon1 = LoadImage("dc33-banner-fox.jpg");
+            // defcon2 = LoadImage("dc33-banner-person.jpg");
+            defcon1 = LoadImage("dc33-banner.jpg");
+            defcon2 = LoadImage("dc33-logo-dark.jpg");
+            defcon3 = LoadImage("dc33-logo-transparentfilled.jpg");
 
             return Task.CompletedTask;
         }
@@ -171,7 +173,7 @@ namespace DefConBadge2024
         byte[] LoadResource(string filename)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = $"DefConBadge2024.{filename}";
+            var resourceName = $"DefConBadge2025.{filename}";
 
             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
             {

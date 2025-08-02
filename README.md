@@ -1,3 +1,3 @@
-# DefCon-Badge-2024
+# DefCon-Badge-2025
 
-Proj Lab badge project for DEF CON 32 (2024)
+Wilderness Labs Meadow Project Lab badge for DEF CON 33 (2025)
